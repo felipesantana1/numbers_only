@@ -1,0 +1,16 @@
+var arr = [17,"hello", true, -1,300, false, 14];
+
+function numsOnly() {
+
+    var newarr = [];
+
+    for(var i = 0; i < arr.length; i++) {
+
+        if(typeof(arr[i]) === "number") {
+
+            newarr.push(arr[i]);
+        }
+    }
+return newarr;
+}
+console.log(numsOnly());
